@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tailwind.css">
+    <title>Mazala | Accueil</title>
+</head>
+
+<body class="theme-bg-white theme-text-font">
+    <!-- Header -->
+    <header class=" lg:px-24 flex flex-col  items-center">
+        <!-- Navigation bar for mobile phone -->
+        <nav id="mobileNavBar" class="fixed lg:hidden z-10 top-0 left-0 w-full shadow-xl theme-bg-ternary">
+            <div class="flex px-4  justify-between items-center  py-4 text-lg   bg-white">
+                <!-- Logo -->
+                <div class="theme-logo-font theme-text-ternary text-2xl flex items-center"><a href="/">Mazala</a>
+                </div>
+                <!-- Toggle navigation bar button -->
+                <div>
+                    <a id="toogleNavBtn" href="#"
+                        class="theme-bg-ternary text-white px-4 py-1  text-lg shadow-2xl">--</a>
+                </div>
+            </div>
+            <!-- Navigation links  -->
+            <ul id="mobileLinks"
+                class="theme-title-font text-gray-100 shadow-2xl  flex hidden flex-col items-center py-10 space-y-6  justify-center ">
+                <li><a class="mobileLinksItem" href="../index.html#services"> Services</a></li>
+                <li><a class="mobileLinksItem" href="../index.html#portfolio"> Portfolio</a></li>
+                <li><a class="mobileLinksItem" href="../index.html#team"> Our team</a></li>
+                <li><a href="/pages/about.html"> About Us</a></li>
+                <div class="mt-10">
+                    <a href="./../index.html#contact"
+                        class="theme-bg-white theme-text-ternary px-5 py-2 rounded-full text-lg shadow-2xl ">CONTACT</a>
+                </div>
+            </ul>
+
+        </nav>
+        <!-- Navigation bar for desktop -->
+        <nav id="desktopNavBar"
+            class="hidden lg:flex mt-6  justify-between text-xl items-center  py-2 text-lg  w-full theme-bg-white">
+            <!-- Logo -->
+            <div class="theme-logo-font theme-text-ternary text-4xl "><a href="/">Mazala</a>
+            </div>
+            <!-- Navigation links  -->
+            <ul class="theme-title-font flex space-x-8 theme-text-secondary">
+                <li><a href="../index.html#services"> Services</a></li>
+                <li><a href="../index.html#portfolio"> Portfolio</a></li>
+                <li><a href="../index.html#team"> Our team</a></li>
+                <li class="border-b-4 border-yellow-500"><a href="/pages/about.html"> About Us</a></li>
+            </ul>
+            <!-- Contact button -->
+            <div>
+                <a href="../index.html#contact"
+                    class="theme-bg-ternary animate-spin  text-white px-5 py-2 rounded-full text-lg shadow-2xl">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <h3 class="theme-text-ternary theme-title-font text-3xl md:text-4xl text-center mb-10 mt-40 md:mt-20">About
+                Us</h3>
+        </div>
+        <div class=" w-5/6 md:w-1/2 text-justify mx-auto text-lg text-gray-800">
+            Born from the collaboration between two Analyst-Programmers, Mazala is a software engineering firm created
+            in 2020 by James Adonis DJIMBY and KOUMBA Surprise Ineffable, and has been present on the new technologies
+            market since then. <br><br>
+            Mazala is based in UI & UX Design, Web Development, Mobile App Development, Robotics, Artificial
+            Intelligence. <br><br>
+            We also support Start-Ups and Companies in their computerization projects for their information system, as
+            well as in their innovative ideas for a better experience of digitizing their needs and tasks.
+            We set ourselves the goal of computerizing and digitizing all manual data processing systems for companies
+            as well as the various needs or ideas of individuals that we will have the privilege of managing in order to
+            guarantee a better experience of the digital age as well as simplicity, and reliability in the processing
+            of data and the performance of various tasks. <br><br>
+            We are diligent, passionate, and determined to provide you with quality work on time. We remain available to
+            meet you in order to start this great adventure together.
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="pt-24 pb-16 relative">
+        <!-- About us | Policy -->
+        <div class="hidden md:block absolute bottom-6 right-8 ">
+            <ul class="flex space-x-4 text-color-secondary">
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./policies.html">Policies</a></li>
+            </ul>
+        </div>
+        <!-- Liens réseaux sociaux -->
+        <div class="flex space-x-3 justify-center">
+            <div class="w-12 h-12 rounded-full">
+                <img src="../images/facebook.svg" alt="" srcset="" />
+            </div>
+            <div class="w-12 h-12 rounded-full">
+                <img src="../images/WhatsappColor.svg" alt="" srcset="" />
+            </div>
+            <div class="w-12 h-12 rounded-full">
+                <img src="../images/telegram_app.svg" alt="" srcset="" />
+            </div>
+            <div class="w-12 h-12 rounded-full">
+                <img src="../images/linkedin.svg" alt="" srcset="" />
+            </div>
+        </div>
+        <!-- Localisation -->
+        <div class="flex justify-center text-gray-700 text-sm theme-title-font text-md mt-6">
+            Republic Of Congo, Brazzaville
+        </div>
+        <div class="flex md:hidden justify-center mt-4">
+            <ul class="flex space-x-3 text-gray-600 text-sm">
+                <li class=""><a style="color: rgb(255, 165, 0);" href="./about.html">About Us</a></li>
+                <li><a style="color: rgb(255, 165, 0);" href="./policies.html">Policies</a></li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div class="flex justify-center text-gray-600 mt-6 text-xs">
+            &copy; 2021 Mazala. All Rights Reserved
+        </div>
+    </footer>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="../js/gsap.min.js"
+        integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../js/index.js"></script>
+</body>
+
+</html>
