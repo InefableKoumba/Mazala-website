@@ -83,17 +83,30 @@
 
 <body class="theme-bg-white theme-text-font">
     <!-- Header -->
-    <header class=" lg:px-24  flex flex-col  items-center">
+    <header class=" md:px-10 lg:px-24  flex flex-col  items-center">
         <!-- Navigation bar for mobile phone -->
-        <nav id="mobileNavBar" class="fixed lg:hidden z-10 top-0 left-0 w-full shadow-xl theme-bg-ternary">
+        <nav id="mobileNavBar" class="fixed md:hidden z-10 top-0 left-0 w-full shadow-md theme-bg-ternary">
             <div class="flex px-4  justify-between items-center  py-4 text-lg   bg-white">
                 <!-- Logo -->
-                <div class="theme-logo-font theme-text-ternary text-2xl flex items-center"><a href="/">Mazala</a>
+                <div>
+                    <img class="w-12" src="./images/mazala-logo.png" alt="logo">
                 </div>
                 <!-- Toggle navigation bar button -->
                 <div>
-                    <a id="toogleNavBtn" href="#"
-                        class="theme-bg-ternary text-white px-4 py-1  text-lg shadow-2xl">--</a>
+                    <button id="toogleNavBtn" class="h-full w-full block focus:outline-none  text-center text-lg">
+                        <svg viewBox="0 0 121 73" class=" h-5">
+                            <g id="Group_253" data-name="Group 253" transform="translate(-119 -378)">
+                                <g id="Group_252" data-name="Group 252">
+                                    <rect id="Rectangle_149" data-name="Rectangle 149" width="121" height="19" rx="9.5"
+                                        transform="translate(119 378)" fill="#c80" />
+                                    <rect id="Rectangle_149-2" data-name="Rectangle 149" width="121" height="19"
+                                        rx="9.5" transform="translate(119 405)" fill="#c80" />
+                                    <rect id="Rectangle_149-3" data-name="Rectangle 149" width="121" height="19"
+                                        rx="9.5" transform="translate(119 432)" fill="#c80" />
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <!-- Navigation links  -->
@@ -103,7 +116,7 @@
                 <li><a class="mobileLinksItem" href="#portfolio"> Portfolio</a></li>
                 <li><a class="mobileLinksItem" href="#team"> Our team</a></li>
                 <li><a href="/pages/about.html"> About Us</a></li>
-                <div class="mt-10">
+                <div class="mt-10 mobileLinksItem">
                     <a href="#contact"
                         class="theme-bg-white theme-text-ternary px-5 py-2 rounded-full text-lg shadow-2xl ">CONTACT</a>
                 </div>
@@ -112,13 +125,13 @@
         </nav>
         <!-- Navigation bar for desktop -->
         <nav id="desktopNavBar"
-            class="hidden lg:flex mt-6  justify-between text-xl items-center  py-2 text-lg  w-full theme-bg-white">
+            class="hidden md:flex mt-6  justify-between text-xl items-center  py-2 text-lg  w-full theme-bg-white">
             <!-- Logo -->
-            <div class="theme-logo-font theme-text-ternary text-4xl "><a href="/">Mazala</a>
+            <div><img class="w-20" src="./images/mazala-logo.png" alt="logo">
             </div>
             <!-- Navigation links  -->
             <ul class="theme-title-font flex space-x-8 theme-text-secondary">
-                <li><a href="#services"> Services</a></li>
+                <li><a href="#services-title"> Services</a></li>
                 <li><a href="#portfolio"> Portfolio</a></li>
                 <li><a href="#team"> Our team</a></li>
                 <li><a href="/pages/about.html"> About Us</a></li>
@@ -130,7 +143,7 @@
             </div>
         </nav>
         <!-- Description & ilustration container -->
-        <div class="flex flex-col md:flex-row space-y-10 lg:space-y-0 md:space-x-2  px-4 lg:px-0 py-32 lg:py-8  ">
+        <div class="flex flex-col md:flex-row space-y-10 lg:space-y-0 md:space-x-2  px-4 lg:px-0 py-28 md:py-8  ">
             <!-- Description -->
             <div id="description_text"
                 class="w-full md:w-1/2 space-y-10 flex flex-col justify-center items-center md:items-start">
@@ -173,137 +186,153 @@
                             <rect x="-4" width="243" height="36" fill="none" />
                         </clipPath>
                     </defs>
-                    <g id="Group_237" data-name="Group 237" transform="translate(-1075.094 -200.5)">
+                    <g id="illustration-svg" transform="translate(-1075.094 -200.5)">
                         <g transform="matrix(1, 0, 0, 1, 1075.09, 200.5)" filter="url(#orange-circle)">
                             <circle id="orange-circle-2" data-name="orange-circle" cx="357.5" cy="357.5" r="357.5"
                                 transform="translate(24 20)" fill="#c80" />
                         </g>
-                        <g id="Group_211" data-name="Group 211">
-                            <g id="Group_210" data-name="Group 210">
-                                <rect id="Rectangle_85" data-name="Rectangle 85" width="69.462" height="57.483"
-                                    transform="translate(1337.626 680.664)" fill="#445ea0" />
-                                <rect id="Rectangle_86" data-name="Rectangle 86" width="24.704" height="57.483"
-                                    transform="translate(1337.626 680.664)" fill="#2e4c89" />
-                            </g>
-                            <path id="Path_50" data-name="Path 50"
-                                d="M277.865,456.126c0,3.424-1.655,6.225-3.678,6.225H127.809c-2.023,0-3.678-2.8-3.678-6.225v-24.9c0-3.424,1.655-6.225,3.678-6.225H274.187c2.023,0,3.678,2.8,3.678,6.225Z"
-                                transform="translate(1171.77 309.08)" fill="#293d7c" />
-                            <path id="Path_52" data-name="Path 52"
-                                d="M0,346.518c0,3.152,8.253,5.73,18.34,5.73H568.86V313.883H0Z"
-                                transform="translate(1088.331 329.625)" fill="#293d7c" />
-                            <circle id="Ellipse_45" data-name="Ellipse 45" cx="12.32" cy="12.32" r="12.32"
-                                transform="translate(1360.665 652.539)" fill="#445ea0" />
-                            <path id="Path_54" data-name="Path 54"
-                                d="M568.925,386.624l.38-315.428c0-8.648-6.158-15.723-13.684-15.723H13.685C6.158,55.473,0,62.548,0,71.2v355.33l568.925-2.265Z"
-                                transform="translate(1088.331 221.397)" fill="#445ea0" />
-                        </g>
-                        <rect id="Rectangle_92" data-name="Rectangle 92" width="550" height="359" rx="7"
-                            transform="translate(1099 287)" fill="#eef6ff" />
-                        <circle id="Ellipse_46" data-name="Ellipse 46" cx="11" cy="11" r="11"
-                            transform="translate(1611 291)" fill="#c80" />
-                        <g id="Group_201" data-name="Group 201">
-                            <rect id="Rectangle_94" data-name="Rectangle 94" width="85" height="22" rx="4"
-                                transform="translate(1109 322)" fill="#c5c5c5" />
-                            <rect id="Rectangle_94-2" data-name="Rectangle 94" width="58" height="22" rx="4"
-                                transform="translate(1109 354)" fill="#c5c5c5" />
-                            <rect id="Rectangle_94-3" data-name="Rectangle 94" width="58" height="22" rx="4"
-                                transform="translate(1109 386)" fill="#c5c5c5" />
-                            <rect id="Rectangle_94-4" data-name="Rectangle 94" width="58" height="22" rx="4"
-                                transform="translate(1109 418)" fill="#c5c5c5" />
-                            <rect id="Rectangle_94-5" data-name="Rectangle 94" width="58" height="22" rx="4"
-                                transform="translate(1109 450)" fill="#c5c5c5" />
-                            <rect id="Rectangle_94-6" data-name="Rectangle 94" width="58" height="22" rx="4"
-                                transform="translate(1109 482)" fill="#c5c5c5" />
-                        </g>
-                        <rect id="Rectangle_94-7" data-name="Rectangle 94" width="58" height="22" rx="4"
-                            transform="translate(1204 418)" fill="#c80" />
-                        <g id="Group_204" data-name="Group 204">
-                            <rect id="Rectangle_94-8" data-name="Rectangle 94" width="32" height="22" rx="4"
-                                transform="translate(1601 418)" fill="#c80" />
-                            <rect id="Rectangle_94-9" data-name="Rectangle 94" width="32" height="22" rx="4"
-                                transform="translate(1566 418)" fill="#c80" />
-                        </g>
-                        <g id="Group_207" data-name="Group 207">
-                            <rect id="Rectangle_94-10" data-name="Rectangle 94" width="58" height="9" rx="2"
-                                transform="translate(1109 629)" fill="#c5c5c5" />
-                            <rect id="Rectangle_94-11" data-name="Rectangle 94" width="58" height="9" rx="2"
-                                transform="translate(1109 617)" fill="#c5c5c5" />
-                        </g>
-                        <g id="Group_203" data-name="Group 203">
-                            <rect id="Rectangle_93" data-name="Rectangle 93" width="99" height="86" rx="6"
-                                transform="translate(1534 322)" fill="#4a4860" />
-                            <rect id="Rectangle_96" data-name="Rectangle 96" width="83" height="11" rx="3"
-                                transform="translate(1541 333)" fill="#eef6ff" />
-                            <rect id="Rectangle_96-2" data-name="Rectangle 96" width="51" height="11" rx="3"
-                                transform="translate(1541 364)" fill="#eef6ff" />
-                        </g>
-                        <g id="Group_202" data-name="Group 202">
-                            <rect id="Rectangle_93-2" data-name="Rectangle 93" width="315" height="86" rx="6"
-                                transform="translate(1204 322)" fill="#4a4860" />
-                            <rect id="Rectangle_97" data-name="Rectangle 97" width="76" height="11" rx="2"
-                                transform="translate(1220 330)" fill="#eef6ff" />
-                            <g id="Group_198" data-name="Group 198" transform="translate(0 16)">
-                                <rect id="Rectangle_97-2" data-name="Rectangle 97" width="137" height="11" rx="2"
-                                    transform="translate(1220 349)" fill="#eef6ff" />
-                                <rect id="Rectangle_97-3" data-name="Rectangle 97" width="137" height="11" rx="2"
-                                    transform="translate(1220 368)" fill="#eef6ff" />
-                            </g>
-                            <g id="Group_200" data-name="Group 200" transform="translate(202 16)">
-                                <rect id="Rectangle_97-4" data-name="Rectangle 97" width="81" height="11" rx="2"
-                                    transform="translate(1220 349)" fill="#eef6ff" />
-                                <rect id="Rectangle_97-5" data-name="Rectangle 97" width="55" height="11" rx="2"
-                                    transform="translate(1220 368)" fill="#eef6ff" />
-                            </g>
-                            <rect id="Rectangle_97-6" data-name="Rectangle 97" width="79" height="11" rx="2"
-                                transform="translate(1422 330)" fill="#eef6ff" />
-                        </g>
-                        <g id="Group_206" data-name="Group 206">
-                            <rect id="Rectangle_98" data-name="Rectangle 98" width="433" height="192" rx="9"
-                                transform="translate(1206 448)" fill="#4a4860" />
-                            <g id="Group_205" data-name="Group 205">
-                                <g id="Group_197" data-name="Group 197" transform="translate(11 -21)">
-                                    <rect id="Rectangle_94-12" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1276 484)" fill="#eef6ff" />
-                                    <rect id="Rectangle_94-13" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1407 484)" fill="#eef6ff" />
-                                    <rect id="Rectangle_94-14" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1540 484)" fill="#d2d1cf" />
-                                    <rect id="Rectangle_94-15" data-name="Rectangle 94" width="31" height="7" rx="2"
-                                        transform="translate(1276 497)" fill="#eef6ff" />
-                                    <rect id="Rectangle_95" data-name="Rectangle 95" width="67" height="43" rx="5"
-                                        transform="translate(1204 484)" fill="#c80" />
+                        <g id="desktop" transform="translate(-7 16)">
+                            <g id="Group_211" data-name="Group 211" transform="translate(1.017 2.35)">
+                                <g id="Group_210" data-name="Group 210">
+                                    <rect id="Rectangle_85" data-name="Rectangle 85" width="69.462" height="57.483"
+                                        transform="translate(1337.626 680.664)" fill="#445ea0" />
+                                    <rect id="Rectangle_86" data-name="Rectangle 86" width="24.704" height="57.483"
+                                        transform="translate(1337.626 680.664)" fill="#2e4c89" />
                                 </g>
-                                <g id="Group_197-2" data-name="Group 197" transform="translate(11 42)">
-                                    <rect id="Rectangle_94-16" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1276 484)" fill="#eef6ff" />
-                                    <rect id="Rectangle_94-17" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1407 484)" fill="#eef6ff" />
-                                    <rect id="Rectangle_94-18" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1540 484)" fill="#eef6ff" />
-                                    <rect id="Rectangle_94-19" data-name="Rectangle 94" width="31" height="7" rx="2"
-                                        transform="translate(1276 497)" fill="#eef6ff" />
-                                    <rect id="Rectangle_95-2" data-name="Rectangle 95" width="67" height="43" rx="5"
-                                        transform="translate(1204 484)" fill="#c80" />
+                                <path id="Path_50" data-name="Path 50"
+                                    d="M277.865,456.126c0,3.424-1.655,6.225-3.678,6.225H127.809c-2.023,0-3.678-2.8-3.678-6.225v-24.9c0-3.424,1.655-6.225,3.678-6.225H274.187c2.023,0,3.678,2.8,3.678,6.225Z"
+                                    transform="translate(1171.77 309.08)" fill="#293d7c" />
+                                <path id="Path_52" data-name="Path 52"
+                                    d="M0,346.518c0,3.152,8.253,5.73,18.34,5.73H568.86V313.883H0Z"
+                                    transform="translate(1088.331 329.625)" fill="#293d7c" />
+                                <circle id="Ellipse_45" data-name="Ellipse 45" cx="12.32" cy="12.32" r="12.32"
+                                    transform="translate(1360.665 652.539)" fill="#445ea0" />
+                                <path id="Path_54" data-name="Path 54"
+                                    d="M568.925,386.624l.38-315.428c0-8.648-6.158-15.723-13.684-15.723H13.685C6.158,55.473,0,62.548,0,71.2v355.33l568.925-2.265Z"
+                                    transform="translate(1088.331 221.397)" fill="#445ea0" />
+                            </g>
+                            <g id="Group_239" data-name="Group 239">
+                                <rect id="desktop-screen" width="550" height="359" rx="7"
+                                    transform="translate(1099 287)" fill="#eef6ff" />
+                                <g id="desktop-screen-contents">
+                                    <circle id="Ellipse_46" data-name="Ellipse 46" cx="11" cy="11" r="11"
+                                        transform="translate(1611 291)" fill="#c80" />
+                                    <g id="Group_237" data-name="Group 237">
+                                        <g id="Group_201" data-name="Group 201">
+                                            <rect id="Rectangle_94" data-name="Rectangle 94" width="85" height="22"
+                                                rx="4" transform="translate(1109 322)" fill="#c5c5c5" />
+                                            <rect id="Rectangle_94-2" data-name="Rectangle 94" width="58" height="22"
+                                                rx="4" transform="translate(1109 354)" fill="#c5c5c5" />
+                                            <rect id="Rectangle_94-3" data-name="Rectangle 94" width="58" height="22"
+                                                rx="4" transform="translate(1109 386)" fill="#c5c5c5" />
+                                            <rect id="Rectangle_94-4" data-name="Rectangle 94" width="58" height="22"
+                                                rx="4" transform="translate(1109 418)" fill="#c5c5c5" />
+                                            <rect id="Rectangle_94-5" data-name="Rectangle 94" width="58" height="22"
+                                                rx="4" transform="translate(1109 450)" fill="#c5c5c5" />
+                                            <rect id="Rectangle_94-6" data-name="Rectangle 94" width="58" height="22"
+                                                rx="4" transform="translate(1109 482)" fill="#c5c5c5" />
+                                        </g>
+                                        <rect id="Rectangle_94-7" data-name="Rectangle 94" width="58" height="22" rx="4"
+                                            transform="translate(1204 418)" fill="#c80" />
+                                        <g id="Group_204" data-name="Group 204">
+                                            <rect id="Rectangle_94-8" data-name="Rectangle 94" width="32" height="22"
+                                                rx="4" transform="translate(1601 418)" fill="#c80" />
+                                            <rect id="Rectangle_94-9" data-name="Rectangle 94" width="32" height="22"
+                                                rx="4" transform="translate(1566 418)" fill="#c80" />
+                                        </g>
+                                        <g id="Group_207" data-name="Group 207">
+                                            <rect id="Rectangle_94-10" data-name="Rectangle 94" width="58" height="9"
+                                                rx="2" transform="translate(1109 629)" fill="#c5c5c5" />
+                                            <rect id="Rectangle_94-11" data-name="Rectangle 94" width="58" height="9"
+                                                rx="2" transform="translate(1109 617)" fill="#c5c5c5" />
+                                        </g>
+                                        <g id="Group_203" data-name="Group 203">
+                                            <rect id="Rectangle_93" data-name="Rectangle 93" width="99" height="86"
+                                                rx="6" transform="translate(1534 322)" fill="#4a4860" />
+                                            <rect id="Rectangle_96" data-name="Rectangle 96" width="83" height="11"
+                                                rx="3" transform="translate(1541 333)" fill="#eef6ff" />
+                                            <rect id="Rectangle_96-2" data-name="Rectangle 96" width="51" height="11"
+                                                rx="3" transform="translate(1541 364)" fill="#eef6ff" />
+                                        </g>
+                                        <g id="Group_202" data-name="Group 202">
+                                            <rect id="Rectangle_93-2" data-name="Rectangle 93" width="315" height="86"
+                                                rx="6" transform="translate(1204 322)" fill="#4a4860" />
+                                            <rect id="Rectangle_97" data-name="Rectangle 97" width="76" height="11"
+                                                rx="2" transform="translate(1220 330)" fill="#eef6ff" />
+                                            <g id="Group_198" data-name="Group 198" transform="translate(0 16)">
+                                                <rect id="Rectangle_97-2" data-name="Rectangle 97" width="137"
+                                                    height="11" rx="2" transform="translate(1220 349)" fill="#eef6ff" />
+                                                <rect id="Rectangle_97-3" data-name="Rectangle 97" width="137"
+                                                    height="11" rx="2" transform="translate(1220 368)" fill="#eef6ff" />
+                                            </g>
+                                            <g id="Group_200" data-name="Group 200" transform="translate(202 16)">
+                                                <rect id="Rectangle_97-4" data-name="Rectangle 97" width="81"
+                                                    height="11" rx="2" transform="translate(1220 349)" fill="#eef6ff" />
+                                                <rect id="Rectangle_97-5" data-name="Rectangle 97" width="55"
+                                                    height="11" rx="2" transform="translate(1220 368)" fill="#eef6ff" />
+                                            </g>
+                                            <rect id="Rectangle_97-6" data-name="Rectangle 97" width="79" height="11"
+                                                rx="2" transform="translate(1422 330)" fill="#eef6ff" />
+                                        </g>
+                                        <g id="Group_206" data-name="Group 206">
+                                            <rect id="Rectangle_98" data-name="Rectangle 98" width="433" height="192"
+                                                rx="9" transform="translate(1206 448)" fill="#4a4860" />
+                                            <g id="Group_205" data-name="Group 205">
+                                                <g id="Group_197" data-name="Group 197" transform="translate(11 -21)">
+                                                    <rect id="Rectangle_94-12" data-name="Rectangle 94" width="110"
+                                                        height="10" rx="2" transform="translate(1276 484)"
+                                                        fill="#eef6ff" />
+                                                    <rect id="Rectangle_94-13" data-name="Rectangle 94" width="190"
+                                                        height="43" rx="2" transform="translate(1407 484)"
+                                                        fill="#524e7e" />
+                                                    <rect id="Rectangle_94-14" data-name="Rectangle 94" width="31"
+                                                        height="7" rx="2" transform="translate(1276 497)"
+                                                        fill="#eef6ff" />
+                                                    <rect id="Rectangle_95" data-name="Rectangle 95" width="67"
+                                                        height="43" rx="5" transform="translate(1204 484)"
+                                                        fill="#c80" />
+                                                </g>
+                                                <g id="Group_197-2" data-name="Group 197" transform="translate(11 42)">
+                                                    <rect id="Rectangle_94-15" data-name="Rectangle 94" width="109"
+                                                        height="10" rx="2" transform="translate(1276 484)"
+                                                        fill="#eef6ff" />
+                                                    <rect id="Rectangle_94-16" data-name="Rectangle 94" width="191"
+                                                        height="43" rx="2" transform="translate(1407 484)"
+                                                        fill="#524e7e" />
+                                                    <rect id="Rectangle_94-17" data-name="Rectangle 94" width="31"
+                                                        height="7" rx="2" transform="translate(1276 497)"
+                                                        fill="#eef6ff" />
+                                                    <rect id="Rectangle_95-2" data-name="Rectangle 95" width="67"
+                                                        height="43" rx="5" transform="translate(1204 484)"
+                                                        fill="#c80" />
+                                                </g>
+                                                <g id="Group_197-3" data-name="Group 197" transform="translate(11 105)">
+                                                    <rect id="Rectangle_94-18" data-name="Rectangle 94" width="109"
+                                                        height="10" rx="2" transform="translate(1276 484)"
+                                                        fill="#eef6ff" />
+                                                    <rect id="Rectangle_94-19" data-name="Rectangle 94" width="191"
+                                                        height="43" rx="2" transform="translate(1407 484)"
+                                                        fill="#524e7e" />
+                                                    <rect id="Rectangle_94-20" data-name="Rectangle 94" width="31"
+                                                        height="7" rx="2" transform="translate(1276 497)"
+                                                        fill="#eef6ff" />
+                                                    <rect id="Rectangle_95-3" data-name="Rectangle 95" width="67"
+                                                        height="43" rx="5" transform="translate(1204 484)"
+                                                        fill="#c80" />
+                                                </g>
+                                                <line id="Line_39" data-name="Line 39" x2="394"
+                                                    transform="translate(1215 517.5)" fill="none"
+                                                    stroke="rgba(255,255,255,0.51)" stroke-width="1" />
+                                                <line id="Line_40" data-name="Line 40" x2="394"
+                                                    transform="translate(1215 580.5)" fill="none"
+                                                    stroke="rgba(255,255,255,0.55)" stroke-width="1" />
+                                            </g>
+                                        </g>
+                                    </g>
                                 </g>
-                                <g id="Group_197-3" data-name="Group 197" transform="translate(11 105)">
-                                    <rect id="Rectangle_94-20" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1276 484)" fill="#eef6ff" />
-                                    <rect id="Rectangle_94-21" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1407 484)" fill="#eef6ff" />
-                                    <rect id="Rectangle_94-22" data-name="Rectangle 94" width="58" height="10" rx="2"
-                                        transform="translate(1540 484)" fill="#eef6ff" />
-                                    <rect id="Rectangle_94-23" data-name="Rectangle 94" width="31" height="7" rx="2"
-                                        transform="translate(1276 497)" fill="#eef6ff" />
-                                    <rect id="Rectangle_95-3" data-name="Rectangle 95" width="67" height="43" rx="5"
-                                        transform="translate(1204 484)" fill="#c80" />
-                                </g>
-                                <line id="Line_39" data-name="Line 39" x2="394" transform="translate(1215 517.5)"
-                                    fill="none" stroke="rgba(255,255,255,0.51)" stroke-width="1" />
-                                <line id="Line_40" data-name="Line 40" x2="394" transform="translate(1215 580.5)"
-                                    fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1" />
                             </g>
                         </g>
-                        <g id="Group_224" data-name="Group 224" transform="translate(145 -146)">
+                        <g id="mobile" transform="translate(138 -138)">
                             <g id="Group_195" data-name="Group 195" transform="translate(-140 143)">
                                 <rect id="Rectangle_89" data-name="Rectangle 89" width="105" height="177" rx="7"
                                     transform="translate(1176 624)" fill="#293d7c" />
@@ -379,11 +408,11 @@
                                             </g>
                                             <g id="Group_218" data-name="Group 218" transform="translate(0 4)">
                                                 <rect id="Rectangle_107" data-name="Rectangle 107" width="5" height="3"
-                                                    transform="translate(1624 776)" fill="#eef6ff" />
+                                                    transform="translate(1624 776)" fill="#293d7c" />
                                                 <rect id="Rectangle_107-2" data-name="Rectangle 107" width="5"
-                                                    height="3" transform="translate(1624 781)" fill="#eef6ff" />
+                                                    height="3" transform="translate(1624 781)" fill="#293d7c" />
                                                 <rect id="Rectangle_107-3" data-name="Rectangle 107" width="5"
-                                                    height="3" transform="translate(1624 786)" fill="#eef6ff" />
+                                                    height="3" transform="translate(1624 786)" fill="#293d7c" />
                                             </g>
                                         </g>
                                         <g id="Group_219-2" data-name="Group 219" transform="translate(0 25)">
@@ -397,11 +426,11 @@
                                             </g>
                                             <g id="Group_218-2" data-name="Group 218" transform="translate(0 4)">
                                                 <rect id="Rectangle_107-4" data-name="Rectangle 107" width="5"
-                                                    height="3" transform="translate(1624 776)" fill="#eef6ff" />
+                                                    height="3" transform="translate(1624 776)" fill="#293d7c" />
                                                 <rect id="Rectangle_107-5" data-name="Rectangle 107" width="5"
-                                                    height="3" transform="translate(1624 781)" fill="#eef6ff" />
+                                                    height="3" transform="translate(1624 781)" fill="#293d7c" />
                                                 <rect id="Rectangle_107-6" data-name="Rectangle 107" width="5"
-                                                    height="3" transform="translate(1624 786)" fill="#eef6ff" />
+                                                    height="3" transform="translate(1624 786)" fill="#293d7c" />
                                             </g>
                                         </g>
                                         <g id="Group_219-3" data-name="Group 219" transform="translate(0 50)">
@@ -415,18 +444,18 @@
                                             </g>
                                             <g id="Group_218-3" data-name="Group 218" transform="translate(0 4)">
                                                 <rect id="Rectangle_107-7" data-name="Rectangle 107" width="5"
-                                                    height="3" transform="translate(1624 776)" fill="#eef6ff" />
+                                                    height="3" transform="translate(1624 776)" fill="#293d7c" />
                                                 <rect id="Rectangle_107-8" data-name="Rectangle 107" width="5"
-                                                    height="3" transform="translate(1624 781)" fill="#eef6ff" />
+                                                    height="3" transform="translate(1624 781)" fill="#293d7c" />
                                                 <rect id="Rectangle_107-9" data-name="Rectangle 107" width="5"
-                                                    height="3" transform="translate(1624 786)" fill="#eef6ff" />
+                                                    height="3" transform="translate(1624 786)" fill="#293d7c" />
                                             </g>
                                         </g>
                                     </g>
                                 </g>
                             </g>
                         </g>
-                        <g id="Group_236" data-name="Group 236" transform="translate(606 -244)">
+                        <g id="tablet" transform="translate(606 -244)">
                             <g id="Group_196" data-name="Group 196" transform="translate(-633 243)">
                                 <rect id="Rectangle_87" data-name="Rectangle 87" width="294" height="188" rx="10"
                                     transform="translate(1487 619)" fill="#445ea0" />
@@ -552,16 +581,16 @@
                                                     transform="translate(1242 731)">
                                                     <g id="Group_197-4" data-name="Group 197"
                                                         transform="translate(0 0)">
-                                                        <rect id="Rectangle_94-24" data-name="Rectangle 94" width="31"
+                                                        <rect id="Rectangle_94-21" data-name="Rectangle 94" width="31"
                                                             height="5" rx="2" transform="translate(39)"
                                                             fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-25" data-name="Rectangle 94" width="32"
+                                                        <rect id="Rectangle_94-22" data-name="Rectangle 94" width="32"
                                                             height="5" rx="2" transform="translate(109)"
-                                                            fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-26" data-name="Rectangle 94" width="30"
-                                                            height="5" rx="2" transform="translate(180)"
-                                                            fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-27" data-name="Rectangle 94" width="17"
+                                                            fill="#524e7e" />
+                                                        <path id="Path_115" data-name="Path 115"
+                                                            d="M2,0H28a2,2,0,0,1,2,2V3a2,2,0,0,1-2,2H2A2,2,0,0,1,0,3V2A2,2,0,0,1,2,0Z"
+                                                            transform="translate(180)" fill="#524e7e" />
+                                                        <rect id="Rectangle_94-23" data-name="Rectangle 94" width="17"
                                                             height="4" rx="2" transform="translate(39 7)"
                                                             fill="#eef6ff" />
                                                         <rect id="Rectangle_95-4" data-name="Rectangle 95" width="37"
@@ -569,16 +598,16 @@
                                                     </g>
                                                     <g id="Group_197-5" data-name="Group 197"
                                                         transform="translate(0 30)">
-                                                        <rect id="Rectangle_94-28" data-name="Rectangle 94" width="31"
+                                                        <rect id="Rectangle_94-24" data-name="Rectangle 94" width="31"
                                                             height="5" rx="2" transform="translate(39)"
                                                             fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-29" data-name="Rectangle 94" width="32"
+                                                        <rect id="Rectangle_94-25" data-name="Rectangle 94" width="32"
                                                             height="5" rx="2" transform="translate(109)"
-                                                            fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-30" data-name="Rectangle 94" width="30"
+                                                            fill="#524e7e" />
+                                                        <rect id="Rectangle_94-26" data-name="Rectangle 94" width="30"
                                                             height="5" rx="2" transform="translate(180)"
-                                                            fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-31" data-name="Rectangle 94" width="17"
+                                                            fill="#524e7e" />
+                                                        <rect id="Rectangle_94-27" data-name="Rectangle 94" width="17"
                                                             height="4" rx="2" transform="translate(39 7)"
                                                             fill="#eef6ff" />
                                                         <rect id="Rectangle_95-5" data-name="Rectangle 95" width="37"
@@ -586,16 +615,16 @@
                                                     </g>
                                                     <g id="Group_197-6" data-name="Group 197"
                                                         transform="translate(0 61)">
-                                                        <rect id="Rectangle_94-32" data-name="Rectangle 94" width="31"
+                                                        <rect id="Rectangle_94-28" data-name="Rectangle 94" width="31"
                                                             height="5" rx="2" transform="translate(39)"
                                                             fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-33" data-name="Rectangle 94" width="32"
+                                                        <rect id="Rectangle_94-29" data-name="Rectangle 94" width="32"
                                                             height="5" rx="2" transform="translate(109)"
-                                                            fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-34" data-name="Rectangle 94" width="30"
+                                                            fill="#524e7e" />
+                                                        <rect id="Rectangle_94-30" data-name="Rectangle 94" width="30"
                                                             height="5" rx="2" transform="translate(180)"
-                                                            fill="#eef6ff" />
-                                                        <rect id="Rectangle_94-35" data-name="Rectangle 94" width="17"
+                                                            fill="#524e7e" />
+                                                        <rect id="Rectangle_94-31" data-name="Rectangle 94" width="17"
                                                             height="3" rx="1.5" transform="translate(39 7)"
                                                             fill="#eef6ff" />
                                                         <rect id="Rectangle_95-6" data-name="Rectangle 95" width="37"
@@ -618,10 +647,6 @@
                                 </g>
                             </g>
                         </g>
-                        <line id="Line_41" data-name="Line 41" x2="83" transform="translate(1190.5 733.5)" fill="none"
-                            stroke="rgba(255,255,255,0.2)" stroke-width="1" />
-                        <line id="Line_42" data-name="Line 42" x2="84" transform="translate(1190.5 758.5)" fill="none"
-                            stroke="rgba(255,255,255,0.13)" stroke-width="1" />
                     </g>
                 </svg>
 
@@ -635,12 +660,13 @@
         </div>
     </header>
     <!-- Our services section -->
-    <section id="services"
-        class="px-4 lg:px-24 py-20 lg:py-40 lg:min-h-screen flex flex-col min-h-screen items-center theme-bg-secondary">
+    <section id="services" class="px-4 lg:px-24 py-20 lg:py-40 flex flex-col  items-center theme-bg-secondary">
         <!-- Section title -->
-        <h2 class="theme-title-font text-3xl lg:text-5xl theme-text-ternary-light">What do we do ?</h2>
+        <h2 id="services-title" class="theme-title-font text-3xl lg:text-5xl theme-text-ternary-light">What
+            do we do ?
+        </h2>
         <!-- Section description -->
-        <div class="text-lg lg:text-xl text-gray-200">
+        <div class="text-lg lg:text-xl text-gray-200 text-center">
             Still, we have more stuffs under our belt
         </div>
         <!-- Box containing all services and they description -->
@@ -649,9 +675,8 @@
             <div id="firstService" class="flex flex-col items-center justify-center space-y-4">
                 <!-- A div containg the service associated image -->
                 <div>
-                    <div
-                        class="w-56 h-56 lg:w-72 lg:h-72 rounded-full theme-bg-secondary-light flex justify-center items-center shadow-2xl">
-                        <img class="w-1/2" src="./images/017-innovation.svg" alt="ui_ux_image" srcset="">
+                    <div class="w-56 h-56 lg:w-72 lg:h-72 rounded-full flex justify-center items-center shadow-2xl">
+                        <img class="w-1/2" src="./images/023-ui design.svg" alt="ui_ux_image" srcset="">
                     </div>
                 </div>
                 <!-- A div containg the service associated description -->
@@ -669,9 +694,82 @@
             <div id="secondService" class="flex flex-col items-center justify-center space-y-4">
                 <!-- A div containg the service associated image -->
                 <div>
-                    <div
-                        class="w-56 h-56 lg:w-72 lg:h-72 rounded-full theme-bg-secondary-light flex justify-center items-center shadow-2xl">
-                        <img class="w-1/2" src="./images/017-innovation.svg" alt="ui_ux_image" srcset="">
+                    <div class="w-56 h-56 lg:w-72 lg:h-72 rounded-full  flex justify-center items-center shadow-2xl">
+                        <svg class="w-2/3 h-2/3" viewBox="0 0 425.438 368.795">
+                            <g id="web-development-svgrepo-com" transform="translate(-43.282 -67.222)">
+                                <ellipse id="Ellipse_52" data-name="Ellipse 52" cx="182.284" cy="14.371" rx="182.284"
+                                    ry="14.371" transform="translate(73.716 407.275)" fill="#edb937" />
+                                <path id="Path_163" data-name="Path 163"
+                                    d="M65.982,67.223H446.019a22.769,22.769,0,0,1,22.7,22.7V324.032H43.282V89.924a22.769,22.769,0,0,1,22.7-22.7h0Z"
+                                    fill="#666" />
+                                <g id="Group_242" data-name="Group 242">
+                                    <path id="Path_164" data-name="Path 164"
+                                        d="M58.694,308.617H453.3V89.924a7.347,7.347,0,0,0-7.285-7.288H65.982A7.347,7.347,0,0,0,58.7,89.924V308.617Z"
+                                        fill="#fff" />
+                                    <path id="Path_165" data-name="Path 165"
+                                        d="M468.718,324.031v24.827c0,12.488-11.26,22.7-25.024,22.7H68.307c-13.764,0-25.024-10.214-25.024-22.7V324.031H468.718Z"
+                                        fill="#fff" />
+                                </g>
+                                <circle id="Ellipse_53" data-name="Ellipse 53" cx="7.816" cy="7.816" r="7.816"
+                                    transform="translate(248.184 338.987)" fill="#b6b6b8" />
+                                <path id="Path_166" data-name="Path 166"
+                                    d="M305.066,407.273l36.1,11.566H170.836l29.123-11.566V371.56h105.1v35.713Z"
+                                    fill="#c2c2c4" />
+                                <path id="Path_167" data-name="Path 167"
+                                    d="M199.961,407.273H305.067l36.1,11.566v4.98H170.838v-4.98Z" fill="#ecf0f1" />
+                                <path id="Path_168" data-name="Path 168" d="M199.961,371.559H305.067v35.713Z"
+                                    fill="#919191" />
+                                <rect id="Rectangle_119" data-name="Rectangle 119" width="27.742" height="7.016"
+                                    transform="translate(75.849 97.5)" fill="#20d0c2" />
+                                <rect id="Rectangle_120" data-name="Rectangle 120" width="85.269" height="7.016"
+                                    transform="translate(108.303 97.5)" fill="#ff5b62" />
+                                <g id="Group_243" data-name="Group 243">
+                                    <rect id="Rectangle_121" data-name="Rectangle 121" width="26.502" height="7.016"
+                                        transform="translate(197.055 97.5)" fill="#fad24d" />
+                                </g>
+                                <g id="Group_246" data-name="Group 246">
+                                    <rect id="Rectangle_136" data-name="Rectangle 136" width="2.807" height="8.416"
+                                        transform="translate(120.375 111.093)" fill="#fff" />
+                                    <rect id="Rectangle_137" data-name="Rectangle 137" width="2.807" height="8.416"
+                                        transform="translate(193.193 138.689)" fill="#fff" />
+                                </g>
+                                <g id="Group_249" data-name="Group 249">
+                                    <rect id="Rectangle_146" data-name="Rectangle 146" width="2.807" height="8.416"
+                                        transform="translate(120.375 216.577)" fill="#fff" />
+                                    <rect id="Rectangle_147" data-name="Rectangle 147" width="2.807" height="8.416"
+                                        transform="translate(193.193 244.183)" fill="#fff" />
+                                </g>
+                                <g id="Group_250" data-name="Group 250">
+                                    <rect id="Rectangle_148" data-name="Rectangle 148" width="147.352" height="33.984"
+                                        transform="translate(290.223 97.5)" fill="#dce3db" />
+                                    <path id="Path_169" data-name="Path 169" d="M290.221,136.3H360.4V181.15H290.221Z"
+                                        fill="#dce3db" />
+                                    <path id="Path_170" data-name="Path 170" d="M367.4,136.3h70.178V181.15H367.4Z"
+                                        fill="#dce3db" />
+                                    <path id="Path_171" data-name="Path 171"
+                                        d="M290.423,187.581H437.376v2.172H290.423Zm0,20.534h96.534v2.172H290.423Zm0-6.846H437.376v2.172H290.423Zm0-6.843H437.376V196.6H290.423Z"
+                                        fill="#dce3db" />
+                                    <path id="Path_172" data-name="Path 172"
+                                        d="M290.048,215.622h43.793v43.42H290.048Zm103.913,0h43.795v43.42H393.961Zm-51.956,0H385.8v43.42H342.005Z"
+                                        fill="#dce3db" />
+                                    <path id="Path_173" data-name="Path 173"
+                                        d="M290.423,265.088H437.376v2.172H290.423Zm0,20.534h96.534v2.172H290.423Zm0-6.845H437.376v2.172H290.423Zm0-6.843H437.376v2.172H290.423Z"
+                                        fill="#dce3db" />
+                                </g>
+                                <g id="Group_251" data-name="Group 251" transform="translate(-214.199 34.708)">
+                                    <rect id="Rectangle_148-2" data-name="Rectangle 148" width="147.352" height="33.984"
+                                        transform="translate(290.223 97.5)" fill="#dce3db" />
+                                    <path id="Path_169-2" data-name="Path 169" d="M290.221,136.3H360.4V181.15H290.221Z"
+                                        transform="translate(0.002 13.025)" fill="#dce3db" />
+                                    <path id="Path_170-2" data-name="Path 170" d="M367.4,136.3h70.178V181.15H367.4Z"
+                                        transform="translate(0.18 13.025)" fill="#dce3db" />
+                                    <path id="Path_172-2" data-name="Path 172"
+                                        d="M290.048,215.622h43.793v43.42H290.048Zm103.913,0h43.795v43.42H393.961Zm-51.956,0H385.8v43.42H342.005Z"
+                                        transform="translate(0 -5.956)" fill="#dce3db" />
+                                </g>
+                            </g>
+                        </svg>
+
                     </div>
                 </div>
                 <!-- A div containg the service associated description -->
@@ -689,15 +787,48 @@
             <div id="thirdService" class="flex flex-col items-center justify-center space-y-4">
                 <!-- A div containg the service associated image -->
                 <div>
-                    <div
-                        class="w-56 h-56 lg:w-72 lg:h-72 rounded-full theme-bg-secondary-light flex justify-center items-center shadow-2xl">
-                        <img class="w-1/2" src="./images/017-innovation.svg" alt="ui_ux_image" srcset="">
+                    <div class="w-56 h-56 lg:w-72 lg:h-72 rounded-full  flex justify-center items-center shadow-2xl">
+                        <svg id="mobile-development" class="w-2/3 h-2/3" viewBox="0 0 218.469 372.682">
+                            <path id="Path_116" data-name="Path 116"
+                                d="M205.6,0H12.864A12.861,12.861,0,0,0,0,12.864V321.277H218.469V12.864A12.861,12.861,0,0,0,205.6,0Z"
+                                fill="#2f4156" />
+                            <path id="Path_117" data-name="Path 117"
+                                d="M57.979,15.851H19.426A6.426,6.426,0,1,1,19.426,3H57.979a6.426,6.426,0,1,1,0,12.851Z"
+                                transform="translate(70.532 16.277)" fill="#fff" />
+                            <path id="Path_118" data-name="Path 118"
+                                d="M202.687,123.107H15.781A15.776,15.776,0,0,1,0,107.325V46H218.469v61.325A15.776,15.776,0,0,1,202.687,123.107Z"
+                                transform="translate(0 249.575)" fill="#eaeff0" />
+                            <ellipse id="Ellipse_50" data-name="Ellipse 50" cx="19.5" cy="19" rx="19.5" ry="19"
+                                transform="translate(90 315)" fill="#b8bec3" />
+                            <path id="Path_119" data-name="Path 119" d="M49.553,87.681,11,68.4V17L49.553,36.277Z"
+                                transform="translate(59.681 92.234)" fill="#ed8a19" />
+                            <path id="Path_120" data-name="Path 120"
+                                d="M88.107,33.277,49.553,52.553,11,33.277,49.553,14Z"
+                                transform="translate(59.681 75.958)" fill="#ebba16" />
+                            <path id="Path_121" data-name="Path 121" d="M17,87.681,55.553,68.4V17L17,36.277Z"
+                                transform="translate(92.234 92.234)" fill="#d37313" />
+                            <path id="Path_122" data-name="Path 122" d="M55.553,98.681,17,79.4V28L55.553,47.277Z"
+                                transform="translate(92.234 151.915)" fill="#3fefef" />
+                            <path id="Path_123" data-name="Path 123"
+                                d="M94.107,44.277,55.553,63.553,17,44.277,55.553,25Z"
+                                transform="translate(92.234 135.639)" fill="#12a2a8" />
+                            <path id="Path_124" data-name="Path 124" d="M23,98.681,61.553,79.4V28L23,47.277Z"
+                                transform="translate(124.788 151.915)" fill="#1dd1d9" />
+                            <path id="Path_125" data-name="Path 125" d="M43.553,98.681,5,79.4V28L43.553,47.277Z"
+                                transform="translate(27.128 151.915)" fill="#fc3e81" />
+                            <path id="Path_126" data-name="Path 126"
+                                d="M82.107,44.277,43.553,63.553,5,44.277,43.553,25Z"
+                                transform="translate(27.128 135.639)" fill="#fd82ac" />
+                            <path id="Path_127" data-name="Path 127" d="M11,98.681,49.553,79.4V28L11,47.277Z"
+                                transform="translate(59.681 151.915)" fill="#f01054" />
+                        </svg>
+
                     </div>
                 </div>
                 <!-- A div containg the service associated description -->
                 <div>
                     <div class="flex flex-col justify-center items-center space-y-1">
-                        <h3 class="theme-text-ternary-light text-2xl lg:text-3xl text-center">Mobile Apps Development
+                        <h3 class="theme-text-ternary-light text-2xl lg:text-3xl text-center">Mobile Development
                         </h3>
                         <p class="text-lg lg:text-xl text-gray-200 text-center"> Mobile Apps are revolutionning the way
                             we make businesses. Let us take care of it for you and relax!
@@ -838,7 +969,7 @@
 
     </section>
     <!-- Section team members -->
-    <section id="team" class="min-h-screen py-20 md:py-40 theme-bg-secondary px-4 md:px-10">
+    <section id="team" class="py-20 md:py-40 theme-bg-secondary px-4 md:px-10">
         <!-- Section title -->
         <h3 class="theme-text-ternary theme-title-font text-3xl md:text-4xl text-center">Meet the team</h3>
         <!-- div containing members details -->
@@ -852,9 +983,9 @@
                             class=" flex flex-col md:flex-row mx-auto  md:space-x-4 justify-center items-center space-y-4 md:space-y-0 mt-20">
                             <!-- div containing the picture of the current member -->
                             <div id="picture-member-1"
-                                class="w-72 md:w-96 h-72 md:h-96 rounded-full  bg-top bg-cover shadow-lg"
-                                style="background-image: url( ./images/kims.jpg)">
-                                <div class="rounded-full w-72 md:w-96 h-72 md:h-96 opacity-70 bg-gradient-to-tr"
+                                class="w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full  bg-top bg-cover shadow-lg"
+                                style="background-image: url( ./images/adonis.jpg)">
+                                <div class="rounded-full md:w-72 md:h-72 w-56 h-56 lg:w-96 lg:h-96  opacity-70 bg-gradient-to-tr"
                                     style="background:linear-gradient(hsla(244, 45%, 22%, 0.671),hsla(244, 54%, 35%, 0.781))">
                                 </div>
                             </div>
@@ -864,9 +995,10 @@
                                 <!-- div containg the member name & he's profession -->
                                 <div class="flex flex-col justify-center items-center md:items-start">
                                     <!-- member name -->
-                                    <span class="font-bold">Inefable KOUMBA</span>
+                                    <span class="font-bold">Adonis DJIMBY</span>
                                     <!-- member profession -->
-                                    <span class="text-sm text-gray-200">Analyst-Programmer</span>
+                                    <span class="text-sm text-gray-200">Mazala Co-Founder & CEO /
+                                        Analyst-Programmer</span>
                                 </div>
                                 <!-- div containing the member background description -->
                                 <div>
@@ -903,9 +1035,9 @@
                             class=" flex flex-col md:flex-row mx-auto  md:space-x-4 justify-center items-center space-y-4 md:space-y-0 mt-20">
                             <!-- div containing the picture of the current member -->
                             <div id="picture-member-1"
-                                class="w-72 md:w-96 h-72 md:h-96 rounded-full  bg-top bg-cover shadow-lg"
-                                style="background-image: url( ./images/adonis.jpg)">
-                                <div class="rounded-full w-72 md:w-96 h-72 md:h-96 opacity-70 bg-gradient-to-tr"
+                                class="w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full  bg-top bg-cover shadow-lg"
+                                style="background-image: url( ./images/kims.jpg)">
+                                <div class="rounded-full md:w-72 md:h-72 w-56 h-56 lg:w-96 lg:h-96  opacity-70 bg-gradient-to-tr"
                                     style="background:linear-gradient(hsla(244, 45%, 22%, 0.671),hsla(244, 54%, 35%, 0.781))">
                                 </div>
                             </div>
@@ -915,26 +1047,17 @@
                                 <!-- div containg the member name & he's profession -->
                                 <div class="flex flex-col justify-center items-center md:items-start">
                                     <!-- member name -->
-                                    <span class="font-bold">Adonis DJIMBY</span>
+                                    <span class="font-bold">Inefable KOUMBA</span>
                                     <!-- member profession -->
-                                    <span class="text-sm text-gray-200">Analyst-Programmer</span>
+                                    <span class="text-sm text-gray-200">Mazala Co-Founder / Analyst-Programmer </span>
                                 </div>
                                 <!-- div containing the member background description -->
                                 <div>
-                                    <p class=" text-base md:text-lg text-center md:text-left">Lorem ipsum dolor sit amet
-                                        consectetur
-                                        adipisicing
-                                        elit.
-                                        Autem non provident aut veritatis quisquam quasi nulla tempore repellat
-                                        voluptatum? Nam
-                                        consectetur eaque repellendus voluptatibus
-                                        expedita, maxime itaque fugiat, fuga voluptatem consequatur architecto porro
-                                        similique
-                                        soluta
-                                        quisquam magnam a. Sit ab ullam animi magni consequuntur accusantium ex
-                                        explicabo
-                                        perferendis,
-                                        dolorum porro?</p>
+                                    <p class=" text-base md:text-lg text-center md:text-left">Hello, my name is Inefable
+                                        KOUMBA. I'm a experienced software engineer and the Co-Founder of Mazala. I'm
+                                        delighted to having you visiting our website. The Mazala team and myself
+                                        included always work hard to provide you the best service possible. Looking
+                                        forwards to work with you!
                                 </div>
                                 <!-- Social media accounts -->
                                 <div class="flex space-x-3 justify-center md:justify-start">
@@ -948,6 +1071,7 @@
                             </div>
                         </div>
                     </li>
+
                 </ul>
             </div>
             <!-- Glide bullets controllers   -->

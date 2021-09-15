@@ -1,0 +1,4 @@
+const languages = {
+  english: {},
+  french: {},
+};

@@ -15,7 +15,6 @@ toogleNavBtn.addEventListener("click", (e) => {
   if (!mobileLinks.classList.contains("hidden"))
     gsap.from(mobileLinks, {
       opacity: 0,
-      y: -100,
       duration: 0.7,
     });
 });
@@ -24,33 +23,33 @@ const screenWidth = window.screen.width;
 // Animations pour les écrans ayant une largeur supérieure à 500px
 const desktopAnimations = () => {
   const tl = gsap.timeline({ repeat: 0, repeatDelay: 1 });
-  tl.from("#desktopNavBar", { y: -200, duration: 0.8 });
-  tl.from("#description_text", { opacity: 0, y: 50, duration: 0.5 });
-  tl.from("#illustration_img", {
-    opacity: 0,
-    x: 50,
-    duration: 1,
-    ease: "elastic",
-  });
-  tl.from("#desktop", { y: -50, opacity: 0, duration: 0.7 }, "-=.6");
-  tl.from("#desktop-screen", {
-    x: -100,
-    opacity: 0,
-    duration: 0.5,
-  });
-  tl.from("#desktop-screen-contents", {
-    opacity: 0,
-    duration: 1,
-  });
-  tl.from("#tablet", { y: -50, opacity: 0, duration: 0.5 }, "-=.3");
-  tl.from("#mobile-phone", { y: -50, opacity: 0, duration: 0.5 }, "-=.3");
+  tl.from("#desktopNavBar", { y: -200, duration: 0.8 })
+    .from("#description_text", { opacity: 0, y: 50, duration: 0.5 })
+    .from("#illustration_img", {
+      opacity: 0,
+      x: 50,
+      duration: 1,
+      ease: "elastic",
+    })
+    .from("#desktop", { y: -50, opacity: 0, duration: 0.7 }, "-=.6")
+    .from("#desktop-screen", {
+      x: -100,
+      opacity: 0,
+      duration: 0.5,
+    })
+    .from("#desktop-screen-contents", {
+      opacity: 0,
+      duration: 1,
+    })
+    .from("#tablet", { y: -50, opacity: 0, duration: 0.5 }, "-=.3")
+    .from("#mobile", { y: -50, opacity: 0, duration: 0.5 }, "-=.3");
 
   //
   const tl2 = gsap
     .timeline({
       scrollTrigger: {
         trigger: "#services",
-        start: "top top", // when the top of the trigger hits the top of the viewport
+        start: "+=10px", // when the top of the trigger hits the top of the viewport
       },
     })
     .from("#firstService", {
@@ -111,17 +110,32 @@ const desktopAnimations = () => {
 };
 // Animations pour les écrans ayant une largeur inférieure à 500px
 const mobileAnimations = () => {
-  const tl = gsap.timeline({ repeat: 0, repeatDelay: 1 });
-  tl.from("#mobileNavBar", { y: -200, duration: 1 });
-  tl.from("#description_text", { opacity: 0, duration: 2 });
-  tl.from("#mobileSubmitBtn", { opacity: 0, duration: 2 }, "-=.5");
+  const tl = gsap.timeline();
+  tl.from("#mobileNavBar", { y: -200, duration: 1 })
+    .from("#description_text", { opacity: 0, duration: 2 })
+    .from("#mobileSubmitBtn", { opacity: 0, duration: 2 }, "-=.5")
+    .from("#illustration_img", { opacity: 0, y: 50, duration: 1 }, "-=3")
+    .from("#desktop", { y: -50, opacity: 0, duration: 0.7 }, "-=2.4")
+    .from(
+      "#desktop-screen",
+      {
+        x: -100,
+        opacity: 0,
+        duration: 0.5,
+      },
+      "-=2"
+    );
   tl.from(
-    "#illustration_img",
-    { opacity: 0, y: 50, duration: 1.7, ease: "elastic" },
-    "-=3"
+    "#desktop-screen-contents",
+    {
+      opacity: 0,
+      duration: 1,
+    },
+    "-=1.5"
   );
+  tl.from("#tablet", { y: -50, opacity: 0, duration: 0.5 }, "-=.8");
+  tl.from("#mobile", { y: -50, opacity: 0, duration: 0.5 }, "-=.8");
 
-  //
   gsap.from("#firstService", {
     scrollTrigger: { trigger: "#firstService", start: "top center" },
     opacity: 0,
@@ -187,74 +201,3 @@ if (screenWidth >= 500) {
 } else {
   mobileAnimations();
 }
-
-$(document).ready(function () {
-  // Set sticker height + hover animation
-  var setCardStyle = function () {
-    var card = $(".card");
-    var cardWidth = card.width();
-    var cardHeight = cardWidth / 2.5;
-
-    // Set scale
-    var cardContentScale = cardWidth / 700;
-    card.css(
-      "transform",
-      "translate3d(0,0,0) matrix3d(1,0,0.00,0.00,0.00,1,0.00,0,0,0,1,0,0,0,0,1) scale(" +
-        cardContentScale +
-        ")"
-    );
-    $(".card h1").css("font-size", cardContentScale * 40 + "px");
-    $(".card span").css("font-size", cardContentScale * 16 + "px");
-    $(".card li a").css("font-size", cardContentScale * 16 + "px");
-
-    // Set height
-    card.height(cardHeight);
-
-    // Generate hover effect
-    card
-      .mouseover(function () {
-        card.mousemove(function (e) {
-          // Find mouse X position in card
-          mouseScreenPositionX = e.pageX;
-          cardLeftPosition = card.offset().left;
-          mousePosX = (mouseScreenPositionX - cardLeftPosition) / cardWidth;
-          // Calculate maxtrix3d X value
-          matrix3dX = (mousePosX / 10000) * 1.5 - 0.0001;
-
-          // Find mouse Y position in card
-          mouseScreenPositionY = e.pageY;
-          cardTopPosition = card.offset().top;
-          mousePosY = (mouseScreenPositionY - cardTopPosition) / cardHeight;
-          // Calculate maxtrix3d Y value
-          matrix3dY = (mousePosY / 10000) * 1.65 - 0.0001;
-
-          // Set CSS
-          card.css(
-            "transform",
-            "translate3d(0,-5px,0) matrix3d(1,0,0.00," +
-              matrix3dX +
-              ",0.00,1,0.00," +
-              matrix3dY +
-              ",0,0,1,0,0,0,0,1) scale(" +
-              cardContentScale * 1.04 +
-              ")"
-          );
-        });
-      })
-      .mouseout(function () {
-        // Unset CSS on mouseleave
-        card.css(
-          "transform",
-          "translate3d(0,0,0) matrix3d(1,0,0.00,0.00,0.00,1,0.00,0,0,0,1,0,0,0,0,1) scale(" +
-            cardContentScale +
-            ")"
-        );
-      });
-  };
-
-  // Execute function
-  setCardStyle();
-  $(window).on("resize", function () {
-    setCardStyle();
-  });
-});
